@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Ashish Ranjan </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo of Website"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa-regular fa-rectangle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-regular fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+
+    </section>
+
+    <!-- About us Content -->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest University</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam adipisci laboriosam illum facilis,
+                    ut iste aliquid suscipit ipsa quae obcaecati sapiente! Facere ea officiis atque!</p>
+                <a href="" class="hero-btn red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg" alt="About us ">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam eligendi eaque voluptatibus autem debitis
+            <br>
+            laudantium possimus veniam odit, iure, cum, est soluta dolorem. Id rerum recusandae eius officia.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Ashish Ranjan</p>
+
+    </section>
+
+
+
+    <!-- javaScript for Menu-->
+    <script>
+
+        var navLink = document.getElementById("navLink");
+
+        function showmenu() {
+            navLink.style.right = "0";
+        }
+        function hidemenu() {
+            navLink.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

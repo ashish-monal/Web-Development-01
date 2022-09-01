@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Ashish Ranjan </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="course-header">
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo of Website"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa-regular fa-rectangle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-regular fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <h1>Our Certification & Online Program for 2022</h1>
+
+    </section>
+
+    <!--  -------------------------Blog Page Content --------------------------------- -->
+
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg" alt="Certificate image">
+                <h2>Our Certification & Online Program for 2022</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, voluptates officiis ut laudantium
+                    dolorem fuga, perferendis minima numquam autem ratione reprehenderit laborum exercitationem saepe
+                    consequatur corrupti facere! Temporibus, a doloribus.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque, ipsum iure sequi enim rem ab,
+                    quisquam, quibusdam beatae unde delectus est magnam sint ducimus.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at soluta nam facilis. Laudantium
+                    expedita veritatis libero modi? In eum et, voluptas praesentium nostrum explicabo. Provident
+                    inventore corporis, aspernatur maxime, vero laboriosam facere tempora eos autem et voluptate
+                    repudiandae consequuntur optio architecto fugit earum? Nemo nihil vero ipsa provident eligendi.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non, veniam nisi officia ab, quae
+                    porro commodi repellendus corporis iste earum consequatur dolorum tempore, amet ad at ex rem? Nihil
+                    ex beatae alias eaque vitae quasi, placeat odio minima excepturi eos voluptatibus exercitationem
+                    aspernatur. Quam!</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name"><br>
+                        <input type="email" placeholder="Enter email">
+                        <br>
+                        <textarea rows="5" placeholder="your comment"></textarea><br>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence </span>
+                    <span>09</span>
+                </div>
+                <div>
+                    <span>Robortics</span>
+                    <span>06</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam eligendi eaque voluptatibus autem debitis
+            <br>
+            laudantium possimus veniam odit, iure, cum, est soluta dolorem. Id rerum recusandae eius officia.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Ashish Ranjan</p>
+
+    </section>
+
+
+
+    <!-- javaScript for Menu-->
+    <script>
+
+        var navLink = document.getElementById("navLink");
+
+        function showmenu() {
+            navLink.style.right = "0";
+        }
+        function hidemenu() {
+            navLink.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

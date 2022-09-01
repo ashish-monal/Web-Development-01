@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Ashish Ranjan </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="course-header">
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo of Website"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa-regular fa-rectangle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-regular fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <h1>Contact Us</h1>
+    </section>
+    <!-- contact us  -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.4515938603513!2d85.18073661494113!3d25.556638283730262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a736f2d52e35%3A0x0!2zMjXCsDMzJzIzLjkiTiA4NcKwMTAnNTguNSJF!5e0!3m2!1sen!2sin!4v1662041499584!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>ABC Road, XYZ Building</h5>
+                        <p>Patna, Bihar, India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 9876543210</h5>
+                        <p>Monday to Saturday, 10 Am to 6 Pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        <h5>aviabc@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="text" name="suject" placeholder="Enter your subject" required>
+                    <textarea rows="08" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam eligendi eaque voluptatibus autem debitis
+            <br>
+            laudantium possimus veniam odit, iure, cum, est soluta dolorem. Id rerum recusandae eius officia.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Ashish Ranjan</p>
+
+    </section>
+
+
+
+    <!-- javaScript for Menu-->
+    <script>
+
+        var navLink = document.getElementById("navLink");
+
+        function showmenu() {
+            navLink.style.right = "0";
+        }
+        function hidemenu() {
+            navLink.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
